@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+ 
+     
+nav {
+  background-color: rgb(59, 93, 80);
+}
+
+.heading {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-list li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list li a {
+  color: rgba(255, 255, 255, 0.6) !important; /* Lighter color for non-active items */
+  position: relative;
+  padding-bottom: 5px; 
+}
+
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::after{
+  visibility: visible;
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.nav-list li.current a {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+    /*navbar css ends here*/
+     .aboutus_section_one{
+    background-color: rgb(239,242,241);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    font-size: 15px;
+    line-height: 2;
+}
+.aboutus_section_one h2{
+    padding: 40px 0px;
+    color: #000;
+}
+.aboutus_section_one h5{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #000;
+}
+.aboutus_section_one strong{
+    color: #000;
+}
+
+      /*footer css starts here*/
+   .footer-section {
+    padding: 80px 0px;
+    background: #ffffff;
+}
+
+
+}
+.PE {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.PE a {
+     font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.para1{
+    line-height: 1.5;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-section .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+.footer-section .custom-social li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: #dce5e4;
+    color: #3b5d50;
+    border-radius: 50%;
+}
+.custom-social li a{
+    text-decoration: none;
+}
+.footer-section .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+
+
+
+.list li a{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;   
+}
+
+.list h6{
+  color: black;
+  font-size: 18px;
+  font-weight: 150px;
+
+}
+.list p a{
+ color: black;
+ text-decoration: none;
+}
+.text1{
+    font-size: 14px;
+}
+
+ @media (max-width: 575.98px) { 
+     .custom-col {
+      flex: 0 0 50%;
+     max-width: 50%;
+     }
+        }
+
+
+@media (max-width: 987px) {
+    .footer-brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .custom-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
